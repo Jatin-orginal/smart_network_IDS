@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Network Intrusion Detection System</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>SNIDS</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#checker">URL Checker</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Smart Network Intrusion Detection System</h1>
+
+            <p>
+                A cybersecurity-based monitoring system that detects
+                suspicious network traffic and risky activities in real-time.
+            </p>
+
+            <button id="monitorBtn">Start Monitoring</button>
+        </div>
+
+        <div class="hero-card">
+            <h3>Cyber Security Dashboard</h3>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <h2>250+</h2>
+                    <p>Packets Analyzed</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>18</h2>
+                    <p>Threats Detected</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>12</h2>
+                    <p>Devices Connected</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>About the Problem</h2>
+
+        <p>
+            Cyber threats are increasing rapidly in modern networks.
+            It is difficult to manually monitor suspicious traffic and identify risky activities.
+            This project provides a beginner-friendly intrusion detection system
+            to monitor packets, identify protocols, and generate alerts.
+        </p>
+
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>Key Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Real-Time Packet Monitoring</h3>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-laptop"></i>
+                <h3>MAC Address Detection</h3>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Risk Classification</h3>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-link"></i>
+                <h3>Phishing URL Detection</h3>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Live Traffic Analysis</h3>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-server"></i>
+                <h3>TCP / UDP Detection</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- How It Works -->
+    <section class="works">
+
+        <h2>How It Works</h2>
+
+        <div class="steps">
+
+            <div class="step">1. Capture Network Traffic</div>
+            <div class="step">2. Analyze Packets</div>
+            <div class="step">3. Extract IP & MAC Address</div>
+            <div class="step">4. Perform Risk Analysis</div>
+            <div class="step">5. Generate Security Alerts</div>
+
+        </div>
+
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard" id="dashboard">
+
+        <h2>Live Dashboard</h2>
+
+        <table>
+
+            <tr>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Protocol</th>
+                <th>Risk</th>
+                <th>Packets</th>
+            </tr>
+
+            <tr>
+                <td>192.168.0.2</td>
+                <td>142.250.182.14</td>
+                <td>TCP</td>
+                <td><span class="low">Low</span></td>
+                <td>120</td>
+            </tr>
+
+            <tr>
+                <td>10.0.0.5</td>
+                <td>45.33.32.156</td>
+                <td>UDP</td>
+                <td><span class="medium">Medium</span></td>
+                <td>320</td>
+            </tr>
+
+            <tr>
+                <td>172.16.0.7</td>
+                <td>203.98.76.23</td>
+                <td>TCP</td>
+                <td><span class="high">High</span></td>
+                <td>580</td>
+            </tr>
+
+        </table>
+
+        <div class="alert-box">
+            ⚠ New Device Alert: Unknown MAC Address Detected
+        </div>
+
+    </section>
+
+    <!-- URL Checker -->
+    <section class="checker" id="checker">
+
+        <h2>Phishing URL Checker</h2>
+
+        <input type="text" id="urlInput"
+        placeholder="Enter URL here">
+
+        <button onclick="checkURL()">Check URL</button>
+
+        <div id="result"></div>
+
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech">
+
+        <h2>Technology Stack</h2>
+
+        <div class="tech-grid">
+
+            <div class="tech-card">Python</div>
+            <div class="tech-card">Flask</div>
+            <div class="tech-card">HTML</div>
+            <div class="tech-card">CSS</div>
+            <div class="tech-card">JavaScript</div>
+            <div class="tech-card">Scapy</div>
+            <div class="tech-card">APIs</div>
+
+        </div>
+
+    </section>
+
+    <!-- Future Scope -->
+    <section class="future">
+
+        <h2>Future Scope</h2>
+
+        <ul>
+            <li>AI/ML-based attack prediction</li>
+            <li>Real-time mobile notifications</li>
+            <li>Cloud-based dashboard integration</li>
+            <li>Advanced traffic visualization</li>
+        </ul>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Project by BCA Student | Cybersecurity & Web Technology Minor Project
+        </p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
